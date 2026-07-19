@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Luma — Κατάλογος</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background:#f7f5f1;
+    color:#27211a;
+    padding:26px;
+}.menu{width:100%;max-width:380px;background:#fff;border:1px solid #eae4d8;border-radius:16px;padding:10px;box-shadow:0 16px 36px -22px rgba(80,60,20,.28)}
+details{border-radius:11px;overflow:hidden}
+summary{list-style:none;display:flex;align-items:center;gap:12px;padding:13px 14px;font-size:.92rem;font-weight:700;cursor:pointer;border-radius:11px;transition:background .13s}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:#faf7f1}
+summary .chev{margin-left:auto;font-size:.7rem;color:#b3a58c;transition:transform .2s}
+details[open] summary{background:#faf6ee}
+details[open] summary .chev{transform:rotate(90deg)}
+details a{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:5px 40px 10px 46px;
+    font-size:.86rem;
+    font-weight:600;
+    color:#7d6f57;
+    text-decoration:none;
+    border-radius:9px;
+}
+details a:hover{background:#faf7f1;color:#27211a}
+.single{display:flex;align-items:center;gap:12px;padding:13px 14px;font-size:.92rem;font-weight:700;color:#27211a;text-decoration:none;border-radius:11px}
+.single:hover{background:#faf7f1}
+.logo {text-align:center;margin-bottom:0px;}
+.logo img {width:240px;height:auto;}
+
+.lang-toggle{
+  width:100%;
+  max-width:380px;
+  display:flex;
+  background:#fff;
+  border:1px solid #eae4d8;
+  border-radius:16px;
+  margin-top:16px;
+  box-shadow:0 10px 24px -18px rgba(80,60,20,.25);
+}
+
+.lang-toggle input{display:none;}
+
+.lang-toggle label{
+  flex:1;
+  text-align:center;
+  padding:10px 14px;
+  border-radius:16px;
+  font-size:.88rem;
+  font-weight:700;
+  color:#7d6f57;
+  cursor:pointer;
+  transition:all .18s ease;
+}
+
+#lang-el:checked + label{background:#0f291e;color:#fff;}
+#lang-en:checked + label{background:#0f291e;color:#fff;}
+
+.en{display:none;}
+body.lang-en .el{display:none;}
+body.lang-en .en{display:inline;}
+
+h2 {margin-bottom:20px;}
+
+</style></head>
+<body class="lang-el">
+<div class="logo"><img src="logo.svg" alt="Luma Logo"></div>
+<span class="el"><h2>Τιμοκατάλογος</h2></span><span class="en"><h2>Price List</h2></span>
+<nav class="menu">
+  <details open>
+    <summary>☕ <span class="el">Καφέδες</span><span class="en">Coffee</span><span class="chev">▸</span></summary>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+  </details>
+  <details>
+    <summary>🍵 <span class="el">Ζεστά ροφήματα</span><span class="en">Hot beverages</span><span class="chev">▸</span></summary>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+  </details>
+  <details>
+    <summary>🍹 <span class="el">Κρύα ροφήματα</span><span class="en">Cold Beverages</span><span class="chev">▸</span></summary>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+  </details>
+    <details>
+    <summary>🥤 <span class="el">Αναψυκτικά</span><span class="en">Soft Drinks</span><span class="chev">▸</span></summary>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+  </details>
+    <details>
+    <summary>🧃 <span class="el">Χυμοί</span><span class="en">Juices</span><span class="chev">▸</span></summary>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+  </details>
+    <details>
+    <summary>🍺 <span class="el">Μπύρες</span><span class="en">Beers</span><span class="chev">▸</span></summary>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+  </details>
+    <details>
+    <summary>🍷 <span class="el">Κρασιά</span><span class="en">Wines</span><span class="chev">▸</span></summary>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+  </details>
+    <details>
+    <summary>🍸 <span class="el">Ποτά</span><span class="en">Alcoholic Drinks</span><span class="chev">▸</span></summary>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+  </details>
+    <details>
+    <summary>🌭 <span class="el">Φαγητά</span><span class="en">Food</span><span class="chev">▸</span></summary>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+  </details>
+    <details>
+    <summary>🍰 <span class="el">Γλυκά</span><span class="en">Desserts</span><span class="chev">▸</span></summary>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+  </details>
+    <details>
+    <summary>💧 <span class="el">Νερό</span><span class="en">Water</span><span class="chev">▸</span></summary>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+    <a href="#"><span class="el">Τσάι</span><span class="en">Tea</span><span class="price">3.00€</span></a>
+  </details>
+    <details>
+    <summary>🛝 <span class="el">Παιδότοπος</span><span class="en">Playground Entrance</span><span class="chev">▸</span></summary>
+    <a href="#"><span class="el">Βρεφική Είσοδος</span><span class="en">Infant Ticket</span><span class="price">1.00€</span></a>
+    <a href="#"><span class="el">Παιδική Είσοδος</span><span class="en">Child Ticket</span><span class="price">2.00€</span></a>
+  </details>
+</nav><div></div>
+<div class="lang-toggle">
+  <input type="radio" id="lang-el" name="lang" checked>
+  <label for="lang-el">🇬🇷 Ελληνικά</label>
+
+  <input type="radio" id="lang-en" name="lang">
+  <label for="lang-en">🇬🇧 English</label>
+</div>
+<script>
+document.getElementById('lang-el').addEventListener('change', () => {
+  document.body.classList.remove('lang-en');
+  document.body.classList.add('lang-el');
+});
+
+document.getElementById('lang-en').addEventListener('change', () => {
+  document.body.classList.remove('lang-el');
+  document.body.classList.add('lang-en');
+});
+</script>
+</body></html>

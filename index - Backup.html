@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Accordion Menu — uiCookies</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f7f5f1;color:#27211a;padding:26px}
+.menu{width:100%;max-width:380px;background:#fff;border:1px solid #eae4d8;border-radius:16px;padding:10px;box-shadow:0 16px 36px -22px rgba(80,60,20,.28)}
+details{border-radius:11px;overflow:hidden}
+summary{list-style:none;display:flex;align-items:center;gap:12px;padding:13px 14px;font-size:.92rem;font-weight:700;cursor:pointer;border-radius:11px;transition:background .13s}
+summary::-webkit-details-marker{display:none}
+summary:hover{background:#faf7f1}
+summary .chev{margin-left:auto;font-size:.7rem;color:#b3a58c;transition:transform .2s}
+details[open] summary{background:#faf6ee}
+details[open] summary .chev{transform:rotate(90deg)}
+details a{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:5px 40px 10px 46px;
+    font-size:.86rem;
+    font-weight:600;
+    color:#7d6f57;
+    text-decoration:none;
+    border-radius:9px;
+}
+details a:hover{background:#faf7f1;color:#27211a}
+.single{display:flex;align-items:center;gap:12px;padding:13px 14px;font-size:.92rem;font-weight:700;color:#27211a;text-decoration:none;border-radius:11px}
+.single:hover{background:#faf7f1}
+</style></head>
+<body>
+<nav class="menu">
+  <a class="single" href="#">Κατάλογος</a>
+  <details open>
+    <summary>🛍️ Shop <span class="chev">▸</span></summary>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+  </details>
+  <details>
+    <summary>📖 Stories <span class="chev">▸</span></summary>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+  </details>
+  <details>
+    <summary>🧾 Help <span class="chev">▸</span></summary>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+  </details>
+    <details>
+    <summary>🧾 Help <span class="chev">▸</span></summary>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+    <a href="#"><span>New arrivals</span><span class="price">3€</span></a>
+  </details>
+</nav>
+</body></html>
